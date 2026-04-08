@@ -1,0 +1,10 @@
+{
+    "chassis": {
+        "Goldfinch": {
+            "component": {
+                "BMC": {},
+                "BIOS": {}
+            }
+        }
+    }
+}

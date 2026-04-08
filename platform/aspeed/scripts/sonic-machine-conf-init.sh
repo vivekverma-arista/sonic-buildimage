@@ -42,11 +42,16 @@ elif echo "$COMPATIBLE" | grep -q "aspeed,ast2700-evb"; then
     PLATFORM="arm64-aspeed_ast2700_evb-r0"
     MACHINE="aspeed_ast2700"
     log "Detected Aspeed AST2700 EVB platform"
+elif echo "$COMPATIBLE" | grep -q "arista_goldfinch-r0"; then
+   PLATFORM="arm64-arista_goldfinch-r0"
+   MACHINE="aspeed_ast2700"
+   log "Detected Arista Goldfinch platform"
 else
     log "ERROR: Unknown hardware. Compatible string: $COMPATIBLE"
     log "Supported platforms:"
     log "  - nexthop,nexthop-b27-r0 -> arm64-nexthop_b27-r0"
     log "  - aspeed,ast2700-evb -> arm64-aspeed_ast2700_evb-r0"
+    log "  - arista_goldfinch-r0 -> arm64-arista_goldfinch-r0"
     exit 1
 fi
 

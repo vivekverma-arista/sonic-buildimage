@@ -1,0 +1,20 @@
+{
+    "chassis": {
+        "name": "Goldfinch",
+        "thermal_manager": false,
+        "status_led": {},
+        "components": [
+            {
+                "name": "BMC"
+            },
+            {
+                "name": "BIOS"
+            }
+        ],
+        "fans": [],
+        "psus": [],
+        "thermals": [],
+        "sfps": []
+    },
+    "interfaces": {}
+}
